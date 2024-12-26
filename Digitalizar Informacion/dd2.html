@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario Sábados-Domingos y Festivos (30-44)</title>
+    <style>
+       table {
+            border-collapse: collapse;
+            font-family: monospace;
+            font-size: 16px; /* Increased base font size */
+        }
+        td {
+            border: 1px solid black;
+            width: 45px; /* Slightly increased width */
+            height: 45px; /* Slightly increased height */
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+        }
+        .cell-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .top, .bottom {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 30px; /* Increased font size for numbers */
+        }
+        .bottom {
+            border-top: 1px solid black;
+            color: red;
+        }
+        .full-cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 30px; /* Increased font size for full-cell numbers */
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: Arial, sans-serif; padding-right: 20px; font-size: 1.5em;">Horarios de Lunes a Viernes</h1>
+    <table style="margin: 0 auto;">
+        <tr>
+            <td><div class="full-cell">00</div></td>
+            <td><div class="cell-content"><div class="top">02</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">05</div><div class="bottom">12</div></div></td>
+            <td><div class="cell-content"><div class="top">08</div><div class="bottom">14</div></div></td>
+            <td><div class="cell-content"><div class="top">14</div><div class="bottom">19</div></div></td>
+            <td><div class="cell-content"><div class="top">21</div><div class="bottom">33</div></div></td>
+            <td><div class="cell-content"><div class="top">26</div><div class="bottom">36</div></div></td>
+            <td><div class="cell-content"><div class="top">36</div><div class="bottom">45</div></div></td>
+            <td><div class="cell-content"><div class="top">46</div><div class="bottom">55</div></div></td>
+            <td><div class="cell-content"><div class="top">53</div><div class="bottom">59</div></div></td>
+            <td><div class="cell-content"><div class="top">08</div><div class="bottom">03</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">07</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">11</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">01</div></td>
+            <td><div class="cell-content"><div class="top">03</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">06</div><div class="bottom">13</div></div></td>
+            <td><div class="cell-content"><div class="top">09</div><div class="bottom">15</div></div></td>
+            <td><div class="cell-content"><div class="top">15</div><div class="bottom">20</div></div></td>
+            <td><div class="cell-content"><div class="top">22</div><div class="bottom">34</div></div></td>
+            <td><div class="cell-content"><div class="top">27</div><div class="bottom">37</div></div></td>
+            <td><div class="cell-content"><div class="top">37</div><div class="bottom">46</div></div></td>
+            <td><div class="cell-content"><div class="top">47</div><div class="bottom">55</div></div></td>
+            <td><div class="cell-content"><div class="top">54</div><div class="bottom">00</div></div></td>
+            <td><div class="cell-content"><div class="top">09</div><div class="bottom">04</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">08</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">12</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">02</div></td>
+            <td><div class="cell-content"><div class="top">04</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">07</div><div class="bottom">14</div></div></td>
+            <td><div class="cell-content"><div class="top">10</div><div class="bottom">16</div></div></td>
+            <td><div class="cell-content"><div class="top">16</div><div class="bottom">21</div></div></td>
+            <td><div class="cell-content"><div class="top">23</div><div class="bottom">35</div></div></td>
+            <td><div class="cell-content"><div class="top">28</div><div class="bottom">38</div></div></td>
+            <td><div class="cell-content"><div class="top">38</div><div class="bottom">47</div></div></td>
+            <td><div class="cell-content"><div class="top">48</div><div class="bottom">56</div></div></td>
+            <td><div class="cell-content"><div class="top">55</div><div class="bottom">01</div></div></td>
+            <td><div class="cell-content"><div class="top">10</div><div class="bottom">05</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">09</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">13</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">03</div></td>
+            <td><div class="cell-content"><div class="top">05</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">08</div><div class="bottom">15</div></div></td>
+            <td><div class="cell-content"><div class="top">11</div><div class="bottom">17</div></div></td>
+            <td><div class="cell-content"><div class="top">17</div><div class="bottom">22</div></div></td>
+            <td><div class="cell-content"><div class="top">24</div><div class="bottom">36</div></div></td>
+            <td><div class="cell-content"><div class="top">29</div><div class="bottom">39</div></div></td>
+            <td><div class="cell-content"><div class="top">39</div><div class="bottom">48</div></div></td>
+            <td><div class="cell-content"><div class="top">49</div><div class="bottom">57</div></div></td>
+            <td><div class="cell-content"><div class="top">56</div><div class="bottom">02</div></div></td>
+            <td><div class="cell-content"><div class="top">11</div><div class="bottom">06</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">10<div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">14</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">04</div></td>
+            <td><div class="cell-content"><div class="top">06</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">09</div><div class="bottom">16</div></div></td>
+            <td><div class="cell-content"><div class="top">12</div><div class="bottom">18</div></div></td>
+            <td><div class="cell-content"><div class="top">18</div><div class="bottom">23</div></div></td>
+            <td><div class="cell-content"><div class="top">25</div><div class="bottom">37</div></div></td>
+            <td><div class="cell-content"><div class="top">30</div><div class="bottom">40</div></div></td>
+            <td><div class="cell-content"><div class="top">40</div><div class="bottom">49</div></div></td>
+            <td><div class="cell-content"><div class="top">50</div><div class="bottom">58</div></div></td>
+            <td><div class="cell-content"><div class="top">57</div><div class="bottom">03</div></div></td>
+            <td><div class="cell-content"><div class="top">12</div><div class="bottom">07</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">11</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">15</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">05</div></td>
+            <td><div class="cell-content"><div class="top">07</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">10</div><div class="bottom">17</div></div></td>
+            <td><div class="cell-content"><div class="top">13</div><div class="bottom">19</div></div></td>
+            <td><div class="cell-content"><div class="top">19</div><div class="bottom">24</div></div></td>
+            <td><div class="cell-content"><div class="top">26</div><div class="bottom">38</div></div></td>
+            <td><div class="cell-content"><div class="top">31</div><div class="bottom">41</div></div></td>
+            <td><div class="cell-content"><div class="top">41</div><div class="bottom">50</div></div></td>
+            <td><div class="cell-content"><div class="top">51</div><div class="bottom">59</div></div></td>
+            <td><div class="cell-content"><div class="top">58</div><div class="bottom">04</div></div></td>
+            <td><div class="cell-content"><div class="top">13</div><div class="bottom">08</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">12</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">16</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">06</div></td>
+            <td><div class="cell-content"><div class="top">08</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">11</div><div class="bottom">18</div></div></td>
+            <td><div class="cell-content"><div class="top">14</div><div class="bottom">20</div></div></td>
+            <td><div class="cell-content"><div class="top">20</div><div class="bottom">25</div></div></td>
+            <td><div class="cell-content"><div class="top">27</div><div class="bottom">39</div></div></td>
+            <td><div class="cell-content"><div class="top">32</div><div class="bottom">42</div></div></td>
+            <td><div class="cell-content"><div class="top">42</div><div class="bottom">51</div></div></td>
+            <td><div class="cell-content"><div class="top">52</div><div class="bottom">00</div></div></td>
+            <td><div class="cell-content"><div class="top">59</div><div class="bottom">05</div></div></td>
+            <td><div class="cell-content"><div class="top">14</div><div class="bottom">09</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">13</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">17</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">07</div></td>
+            <td><div class="cell-content"><div class="top">09</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">12</div><div class="bottom">19</div></div></td>
+            <td><div class="cell-content"><div class="top">15</div><div class="bottom">21</div></div></td>
+            <td><div class="cell-content"><div class="top">21</div><div class="bottom">26</div></div></td>
+            <td><div class="cell-content"><div class="top">28</div><div class="bottom">40</div></div></td>
+            <td><div class="cell-content"><div class="top">33</div><div class="bottom">43</div></div></td>
+            <td><div class="cell-content"><div class="top">43</div><div class="bottom">52</div></div></td>
+            <td><div class="cell-content"><div class="top">53</div><div class="bottom">01</div></div></td>
+            <td><div class="cell-content"><div class="top">00</div><div class="bottom">06</div></div></td>
+            <td><div class="cell-content"><div class="top">15</div><div class="bottom">10</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">14</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">18</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">08</div></td>
+            <td><div class="cell-content"><div class="top">10</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">13</div><div class="bottom">20</div></div></td>
+            <td><div class="cell-content"><div class="top">16</div><div class="bottom">22</div></div></td>
+            <td><div class="cell-content"><div class="top">22</div><div class="bottom">27</div></div></td>
+            <td><div class="cell-content"><div class="top">29</div><div class="bottom">41</div></div></td>
+            <td><div class="cell-content"><div class="top">34</div><div class="bottom">44</div></div></td>
+            <td><div class="cell-content"><div class="top">44</div><div class="bottom">53</div></div></td>
+            <td><div class="cell-content"><div class="top">54</div><div class="bottom">02</div></div></td>
+            <td><div class="cell-content"><div class="top">01</div><div class="bottom">07</div></div></td>
+            <td><div class="cell-content"><div class="top">16</div><div class="bottom">11</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">15</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">19</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">09</div></td>
+            <td><div class="cell-content"><div class="top">11</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">14</div><div class="bottom">21</div></div></td>
+            <td><div class="cell-content"><div class="top">17</div><div class="bottom">23</div></div></td>
+            <td><div class="cell-content"><div class="top">23</div><div class="bottom">28</div></div></td>
+            <td><div class="cell-content"><div class="top">30</div><div class="bottom">42</div></div></td>
+            <td><div class="cell-content"><div class="top">35</div><div class="bottom">45</div></div></td>
+            <td><div class="cell-content"><div class="top">45</div><div class="bottom">54</div></div></td>
+            <td><div class="cell-content"><div class="top">55</div><div class="bottom">03</div></div></td>
+            <td><div class="cell-content"><div class="top">02</div><div class="bottom">08</div></div></td>
+            <td><div class="cell-content"><div class="top">17</div><div class="bottom">12</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">16</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">20</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">10</div></td>
+            <td><div class="cell-content"><div class="top">12</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">15</div><div class="bottom">22</div></div></td>
+            <td><div class="cell-content"><div class="top">18</div><div class="bottom">24</div></div></td>
+            <td><div class="cell-content"><div class="top">24</div><div class="bottom">29</div></div></td>
+            <td><div class="cell-content"><div class="top">31</div><div class="bottom">43</div></div></td>
+            <td><div class="cell-content"><div class="top">36</div><div class="bottom">46</div></div></td>
+            <td><div class="cell-content"><div class="top">46</div><div class="bottom">55</div></div></td>
+            <td><div class="cell-content"><div class="top">56</div><div class="bottom">04</div></div></td>
+            <td><div class="cell-content"><div class="top">03</div><div class="bottom">09</div></div></td>
+            <td><div class="cell-content"><div class="top">18</div><div class="bottom">13</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">17</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">21</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">11</div></td>
+            <td><div class="cell-content"><div class="top">13</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">16</div><div class="bottom">23</div></div></td>
+            <td><div class="cell-content"><div class="top">19</div><div class="bottom">25</div></div></td>
+            <td><div class="cell-content"><div class="top">25</div><div class="bottom">30</div></div></td>
+            <td><div class="cell-content"><div class="top">32</div><div class="bottom">44</div></div></td>
+            <td><div class="cell-content"><div class="top">37</div><div class="bottom">47</div></div></td>
+            <td><div class="cell-content"><div class="top">47</div><div class="bottom">56</div></div></td>
+            <td><div class="cell-content"><div class="top">57</div><div class="bottom">05</div></div></td>
+            <td><div class="cell-content"><div class="top">04</div><div class="bottom">10</div></div></td>
+            <td><div class="cell-content"><div class="top">19</div><div class="bottom">14</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">18</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">21</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">12</div></td>
+            <td><div class="cell-content"><div class="top">14</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">17</div><div class="bottom">24</div></div></td>
+            <td><div class="cell-content"><div class="top">20</div><div class="bottom">26</div></div></td>
+            <td><div class="cell-content"><div class="top">26</div><div class="bottom">31</div></div></td>
+            <td><div class="cell-content"><div class="top">33</div><div class="bottom">45</div></div></td>
+            <td><div class="cell-content"><div class="top">38</div><div class="bottom">48</div></div></td>
+            <td><div class="cell-content"><div class="top">48</div><div class="bottom">57</div></div></td>
+            <td><div class="cell-content"><div class="top">58</div><div class="bottom">06</div></div></td>
+            <td><div class="cell-content"><div class="top">05</div><div class="bottom">11</div></div></td>
+            <td><div class="cell-content"><div class="top">20</div><div class="bottom">15</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">19</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">22</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">13</div></td>
+            <td><div class="cell-content"><div class="top">15</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">18</div><div class="bottom">25</div></div></td>
+            <td><div class="cell-content"><div class="top">21</div><div class="bottom">27</div></div></td>
+            <td><div class="cell-content"><div class="top">27</div><div class="bottom">32</div></div></td>
+            <td><div class="cell-content"><div class="top">34</div><div class="bottom">46</div></div></td>
+            <td><div class="cell-content"><div class="top">39</div><div class="bottom">49</div></div></td>
+            <td><div class="cell-content"><div class="top">49</div><div class="bottom">58</div></div></td>
+            <td><div class="cell-content"><div class="top">59</div><div class="bottom">07</div></div></td>
+            <td><div class="cell-content"><div class="top">06</div><div class="bottom">12</div></div></td>
+            <td><div class="cell-content"><div class="top">21</div><div class="bottom">16</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">20</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">23</div></div></td>
+        </tr>
+        <tr>
+            <td><div class="full-cell">14</div></td>
+            <td><div class="cell-content"><div class="top">16</div><div class="bottom"></div></div></td>
+            <td><div class="cell-content"><div class="top">19</div><div class="bottom">26</div></div></td>
+            <td><div class="cell-content"><div class="top">22</div><div class="bottom">28</div></div></td>
+            <td><div class="cell-content"><div class="top">28</div><div class="bottom">33</div></div></td>
+            <td><div class="cell-content"><div class="top">35</div><div class="bottom">47</div></div></td>
+            <td><div class="cell-content"><div class="top">40</div><div class="bottom">50</div></div></td>
+            <td><div class="cell-content"><div class="top">50</div><div class="bottom">59</div></div></td>
+            <td><div class="cell-content"><div class="top">00</div><div class="bottom">08</div></div></td>
+            <td><div class="cell-content"><div class="top">07</div><div class="bottom">13</div></div></td>
+            <td><div class="cell-content"><div class="top">22</div><div class="bottom">17</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">21</div></div></td>
+            <td><div class="cell-content"><div class="top"></div><div class="bottom">24</div></div></td>
+        </tr>
+    </table>
+</body>
+</html>
+

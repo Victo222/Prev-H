@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe Interno - Intarrivo S.A.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #e74c3c;
+            --accent-color: #f1c40f;
+            --text-color: #ecf0f1;
+            --bg-color: #2c3e50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1600px;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(52, 73, 94, 0.8);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .company-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .content {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .section {
+            flex: 0 0 100%;
+            background-color: rgba(52, 73, 94, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin-right: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subsection {
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .stats p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .stats p::after {
+            content: "";
+            flex-grow: 1;
+            height: 1px;
+            background-color: var(--primary-color);
+            margin-left: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(52, 73, 94, 0.8);
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .neon-text {
+            text-shadow: 0 0 5px var(--text-color), 0 0 10px var(--text-color), 0 0 15px var(--text-color), 0 0 20px var(--primary-color), 0 0 35px var(--primary-color), 0 0 40px var(--primary-color);
+        }
+
+        .colorful-text {
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        .particle {
+            position: absolute;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%233498db" fill-opacity="0.3" d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,165.3C672,139,768,117,864,128C960,139,1056,181,1152,197.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: 1440px 100px;
+            animation: waveAnimation 10s linear infinite;
+        }
+
+        @keyframes waveAnimation {
+            0% {
+                background-position-x: 0;
+            }
+            100% {
+                background-position-x: 1440px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="company-name neon-text">INTARRIVO S.A.</h1>
+            <p class="title">INFORME INTERNO DE AYUDA MEMORIA PARA HACER O DEJAR DE HACER COSAS EN POS DE LA BUENA CONVIVENCIA</p>
+            <div class="wave"></div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="section">
+                    <h2 class="neon-text">1. DEL ESTACIONAMIENTO</h2>
+                    
+                    <div class="subsection">
+                        <h3 class="colorful-text">1.1. DE LOS BUSES</h3>
+                        <p>10 DE 11 SE ESTACIONAN EN FORMA CORRECTA, ESTO ES, EN POSICIÓN DE SALIDA</p>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="colorful-text">1.2. DE LOS CONDUCTORES QUE SE TRASLADAN EN VEHÍCULO</h3>
+                        <p>SIN OBSERVACIÓN POR EL MOMENTO, HASTA QUE LES HABILITEN SU ESTACIONAMIENTO DEFINITIVO.</p>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="colorful-text">1.3. DE LOS EMPRESARIOS</h3>
+                        <p>1 DE 7 QUE VIENEN POR EL TERMINAL, SE ESTACIONAN EN FORMA CORRECTA, O SEA, EN POSICIÓN DE SALIDA</p>
+                    </div>
+
+                    <div class="subsection">
+                        <h3 class="colorful-text">1.4. DE LOS FUNCIONARIOS QUE SE TRASLADAN EN VEHÍCULO</h3>
+                        <p>1 DE 2, SE ESTACIONA CORRECTAMENTE, ESTO ES, EN POSICIÓN DE SALIDA</p>
+                    </div>
+                    <div class="wave"></div>
+                </div>
+
+                <div class="section">
+                    <h2 class="neon-text">2. DEL ASEO DEL BUS</h2>
+                    <div class="stats">
+                        <p>1 DE 26 CONDUCTORES, SABE QUE LA PALA DE LA BASURA ES PARA RECOGER LA BASURA Y NO BOTA LA BASURA AL PISO.</p>
+                    </div>
+
+                    <h2 class="neon-text">3. DEL BUEN TRATO A LOS PASAJEROS</h2>
+                    <div class="stats">
+                        <p>22 DE 26, RESPONDEN AL SALUDO DEL PASAJERO.</p>
+                    </div>
+                    <div class="wave"></div>
+                </div>
+
+                <div class="section">
+                    <h2 class="neon-text">4. DEL BUEN TRATO ENTRE COLABORADORES</h2>
+                    <div class="stats">
+                        <p>30 DE 31 CONTESTAN EL SALUDO</p>
+                        <p>9 DE 34, SON RESPETUOSOS CON SU VOCABULARIO, ES DECIR, NO DICEN GROSERÍAS.</p>
+                        <p>2 DE 34 SON DESCUIDADOS CON SU ASEO PERSONAL</p>
+                        <p>13 DE 34 CONTRIBUYEN AL ASEO DEL COMEDOR</p>
+                        <p>2 DE 34 COLABORA CON LA LIMPIEZA DEL PATIO DE INTARRIVO.</p>
+                    </div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="neon-text">
+            FELICITACIONES A CADA UNO, SIGAMOS MEJORANDO, ESTO ES TAREA DE TODOS.
+            <div class="wave"></div>
+        </footer>
+    </div>
+
+    <script>
+        const content = document.querySelector('.content');
+        const sections = document.querySelectorAll('.section');
+        let currentIndex = 0;
+
+        function slideToNext() {
+            currentIndex = (currentIndex + 1) % sections.length;
+            content.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        // Automatic slider
+        setInterval(slideToNext, 10000); // Change slide every 10 seconds
+
+        // Particle animation
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            const size = Math.random() * 5 + 2;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+            document.body.appendChild(particle);
+
+            gsap.to(particle, {
+                y: '100vh',
+                duration: Math.random() * 10 + 5,
+                ease: "none",
+                onComplete: () => {
+                    particle.remove();
+                    createParticle();
+                }
+            });
+        }
+
+        // Create initial particles
+        for (let i = 0; i < 50; i++) {
+            createParticle();
+        }
+
+        // Entry animations
+        gsap.from("header", {
+            y: -50,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out"
+        });
+
+        gsap.from(".section", {
+            x: 100,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+
+        gsap.from("footer", {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            delay: 1,
+            ease: "power3.out"
+        });
+
+        // Continuous animations
+        gsap.to(".company-name", {
+            textShadow: "0 0 10px #f1c40f, 0 0 20px #f1c40f, 0 0 30px #f1c40f, 0 0 40px #f1c40f",
+            duration: 2,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut"
+        });
+
+        gsap.to(".neon-text", {
+            textShadow: "0 0 5px #ecf0f1, 0 0 10px #ecf0f1, 0 0 15px #ecf0f1, 0 0 20px #3498db, 0 0 35px #3498db",
+            duration: 1.5,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut"
+        });
+
+        gsap.to(".colorful-text", {
+            backgroundPosition: "200% center",
+            duration: 3,
+            repeat: -1,
+            ease: "none"
+        });
+
+        // Floating animation for sections
+        gsap.to(".section", {
+            y: -10,
+            duration: 2,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut",
+            stagger: 0.1
+        });
+
+        // Background animation
+        gsap.to("body", {
+            background: "linear-gradient(45deg, #2c3e50, #34495e, #2c3e50)",
+            backgroundSize: "200% 200%",
+            duration: 10,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut"
+        });
+
+        // Function to redirect to hola.html
+        function redirectToHola() {
+            window.location.href = '/CircularComplete/circularinterna.html';
+        }
+
+        // Set a timeout to call the redirect function after 2 minutes (120000 milliseconds)
+        setTimeout(redirectToHola, 60000);
+    </script>
+</body>
+</html>
+

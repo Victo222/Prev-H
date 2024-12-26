@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario Fin de Semana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            margin-right: 15px;
+            width: 70px;
+            height: 70px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 3em;
+        }
+        .schedule {
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 20px; /* Replaced border-spacing: 10px with border-spacing: 0 10px */
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 10px; /* Added margin-bottom: 10px */
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .highlighted {
+            color: red;
+            font-weight: bold;
+        }
+        .date-header, .special-header, .sunday-special-header, .wednesday-special-header, .saturday-special-header, .red-special-header {
+            padding: 20px;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 2em;
+            text-align: center;
+        }
+        .special-table {
+            background-color: #e6f3ff;
+        }
+        .special-table td {
+            color: blue;
+            font-weight: bold;
+        }
+        .special-table .highlighted {
+            color: red;
+        }
+        .sunday-special {
+            background-color: #ffebeb;
+        }
+        .sunday-special td, .sunday-special-header {
+            color: red;
+            font-weight: bold;
+        }
+        .wednesday-special {
+            background-color: #ffebeb;
+        }
+        .wednesday-special td, .wednesday-special-header {
+            color: red;
+            font-weight: bold;
+        }
+        .saturday-special {
+            background-color: #e6f3ff;
+        }
+        .saturday-special td {
+            color: blue;
+            font-weight: bold;
+        }
+        .saturday-special .highlighted {
+            color: red;
+        }
+        .red-special {
+            background-color: #ffebeb;
+        }
+        .red-special td, .red-special-header {
+            color: red;
+            font-weight: bold;
+        }
+        .special-header, .saturday-special-header {
+            background-color: #e6f3ff;
+            color: blue;
+            padding: 20px;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="/img/IMG-20240202-WA0005.jpg" alt="Icono de calendario" width="70" height="70" />
+        <h1>Horario Fin de Semana</h1>
+    </div>
+
+    <div class="schedule">
+        <div class="special-header">Sábado 21 Diciembre 2024</div>
+        <table class="special-table">
+            <tr>
+                <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td>28</td><td>15</td><td class="highlighted">4</td><td class="highlighted">5</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <div class="sunday-special-header">Domingo 22 Diciembre 2024</div>
+        <table class="sunday-special">
+            <tr>
+                <td>13</td><td>14</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td>11</td><td>12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <div class="wednesday-special-header">Miércoles 25 Diciembre 2024</div>
+        <table class="wednesday-special">
+            <tr>
+                <td>14</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td>12</td><td>13</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <div class="saturday-special-header">Sábado 28 Diciembre 2024</div>
+        <table class="saturday-special">
+            <tr>
+                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td>13</td><td>14</td><td></td><td class="highlighted">18</td><td class="highlighted">19</td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <div class="red-special-header">Domingo 29 Diciembre 2024</div>
+        <table class="red-special">
+            <tr>
+                <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td>15</td><td>16</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <div class="red-special-header">Miércoles 01 Enero 2025</div>
+        <table class="red-special">
+            <tr>
+                <td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>15</td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td>16</td><td>17</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <div class="saturday-special-header">Sábado 04 Enero 2025</div>
+        <table class="saturday-special">
+            <tr>
+                <td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>15</td><td>16</td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td>17</td><td>18</td><td class="highlighted">6</td><td class="highlighted">7</td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <div class="red-special-header">Domingo 05 Enero 2025</div>
+        <table class="red-special">
+            <tr>
+                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td>14</td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
